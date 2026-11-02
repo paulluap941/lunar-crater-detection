@@ -1,0 +1,30 @@
+# raw data, see README (DeepMoon supplemental materials)
+Data/
+
+# cached predictions of notebook 2
+preds_test.npy
+
+# older checkpoint, no notebook loads it
+crater_unet.pt
+
+# duplicate of the notebooks and the demo files
+Notebooks_Data.zip
+
+# loss-function side experiment, near duplicate of notebook 1
+training_with_bce.ipynb
+
+# notebook and python artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+
+# exported figures
+*.png
+*.pdf
+
+.DS_Store

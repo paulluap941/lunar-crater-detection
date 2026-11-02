@@ -1,0 +1,23 @@
+# Lunar crater detection from DEM data
+#
+# PyTorch with CUDA support is not distributed through PyPI. For a GPU setup,
+# install the matching build from https://pytorch.org first and this file after:
+#
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+
+torch>=2.1
+
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+
+h5py>=3.10                 # reading the DEM tiles and masks
+tables>=3.9                # pandas.HDFStore, the crater catalogue tables
+
+scipy>=1.11                # least squares circle fitting, filters
+scikit-image>=0.22         # template matching, connected components
+scikit-learn>=1.3          # DBSCAN clustering of rim pixels
+
+jupyterlab>=4.0
+ipykernel>=6.25
