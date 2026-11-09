@@ -7,6 +7,12 @@ detection bias that would distort crater-based surface dating.
 Course project, Machine Learning, Institute of Geosciences, University of
 Potsdam. Paul Schrepel and Khin San Wai.
 
+![The pipeline on one test tile: DEM, predicted rim mask, catalogue mask, extracted craters, hits and misses](img/pipeline.png)
+
+*One test tile end to end: the DEM, the rim mask the U-Net predicts, the catalogue mask,
+the extracted craters (cyan) against the catalogue (red), and the breakdown into found,
+missed and false positive.*
+
 ---
 
 ## Task

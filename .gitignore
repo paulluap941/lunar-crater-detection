@@ -27,4 +27,7 @@ venv/
 *.png
 *.pdf
 
+# except the README image
+!img/*.png
+
 .DS_Store
