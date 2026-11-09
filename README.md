@@ -9,9 +9,9 @@ Potsdam. Paul Schrepel and Khin San Wai.
 
 ![The pipeline on one test tile: DEM, predicted rim mask, catalogue mask, extracted craters, hits and misses](img/pipeline.png)
 
-*One test tile end to end: the DEM, the rim mask the U-Net predicts, the catalogue mask,
-the extracted craters (cyan) against the catalogue (red), and the breakdown into found,
-missed and false positive.*
+*One test tile: the DEM, the rim mask the U-Net predicts, the catalogue mask,
+the extracted craters (cyan) against the catalogue (red), and the summary into TP,
+FN and FP.*
 
 ---
 
@@ -38,8 +38,6 @@ methods are compared for it.
 | 2 | [`2_evaluation.ipynb`](2_evaluation.ipynb) | crater extraction (template matching, circle-and-arc fitting, union), matching against the catalogue, baseline comparison, dating bias |
 | 3 | [`3_demo.ipynb`](3_demo.ipynb) | the trained model on a 200-tile sample, end to end |
 
-All result cells keep their stored outputs, so every number and figure is
-readable on GitHub without running anything.
 
 **Notebook 3 runs as it is.** The sample, the catalogue excerpt and the trained
 weights are in this repository. Notebooks 1 and 2 need the full DeepMoon
